@@ -39,7 +39,7 @@ pipeline {
         }
         stage('Time Out') {
             options {
-                timeout(time: 1, unit: 'Minutes') 
+                timeout(time: 1, unit: 'MINUTES') 
             }
             steps {
                 echo 'Hello World'
