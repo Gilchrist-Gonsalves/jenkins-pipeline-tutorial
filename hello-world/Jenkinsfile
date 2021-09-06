@@ -8,12 +8,18 @@ pipeline {
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compile the source code'
+                echo 'Gilchrist complied this program'
             }
         }
-        stage('Security Check') {
+        stage('check') {
             steps {
                 echo 'Run the security check against the application' 
+            }
+        }
+        stage('Gilchrist') {
+            steps {
+                echo 'this stage is created by me' 
             }
         }
         stage('Run Unit Tests') {
